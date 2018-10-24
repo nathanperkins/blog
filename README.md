@@ -1,3 +1,3 @@
 # Personal Coding Blog
 ---
-Made with love, Jekyll, & coffee
+Made with love, Hexo, & coffee
