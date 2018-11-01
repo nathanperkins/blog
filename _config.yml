@@ -5,11 +5,11 @@
 # Site
 title: John McBride
 subtitle: Denver based Software Engineer
-description: My personal blog website
+description: I am a Denver based Software Engineer working on cloud microservice technology.
 keywords: Software Engineer
 author: John McBride
 language: en
-timezone: 
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

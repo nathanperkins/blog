@@ -2,11 +2,11 @@
     {
        "name":"Wish Shell",
        "url":"https://github.com/jpmcb/wish-shell",
-       "desc":"A fast, simple & powerful blog framework"
+       "desc":"The Wildly Innovative Shell (WISH) on the command line designed for minimalism and speed."
     },
     {
        "name":"OSU Slack Auto Mod",
        "url":"https://github.com/jpmcb/OSU-Auto-Mod",
-       "desc":"The iconic font and CSS toolkit"
+       "desc":"Auto Moderator bot implementation for the OSU Online CS Post bacc slack community. Provides administration tools for the human admins."
     }
 ]
