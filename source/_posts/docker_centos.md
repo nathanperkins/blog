@@ -122,7 +122,50 @@ On your local host:
 docker cp <containerId>:/file/path/within/container  /host/path/destination
 ```
 
-### 9. Exiting the container 
+### 9. Using Docker volumes
+There is a better way to get files 
+on and off your container, 
+but it's slightly more complicated.
+In this example, 
+let's mount a file system _volume_. 
+You can [read all about volumes](https://docs.docker.com/storage/volumes/)
+and how they are defined by docker.
+But the quick and dirty way to 
+get files on to a container
+from your host
+when you start docker
+is as follows:
+
+```bash
+$ docker run -it -v "/host/user/folder/to/mount:/container/destination" centos 
+```
+
+Note the new `-v` flag
+followed by a full file path mapping.
+Let's break it down.
+The `-v` command tells docker to mount a volume.
+The first part of the path preceding the `:`
+defines the source directory in the host's filesystem to mount.
+The path after the `:` defines the
+destination inside the container to mount the directory!
+
+Now, when you poke around the container,
+the files from the source folder
+will be in the destination folder.
+
+The really cool thing about this
+is that files are persisted
+across volumes.
+Or in other words, 
+if you change a file that's been mounted
+by a volume,
+it will also be changed on host!
+This eliminates the need for copy files and folders
+to and from the container!
+
+_Much thanks to [Nathan](https://github.com/nathanperkins) for pointing out this tidbit!_ 
+
+### 10. Exiting the container 
 
 You can exit and stop a container in interactive mode with `Ctrl d`
 
